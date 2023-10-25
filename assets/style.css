@@ -68,6 +68,7 @@ h5 {
 p {
   font-size: 19px;
   line-height: 1.5;
+  color: var(--color-dark);
 }
 img {
   display: block;
@@ -98,6 +99,8 @@ section {
   margin: 0 auto;
 }
 /* End Global Rules */
+
+/* Start Header */
 header {
   width: 100%;
   height: 5rem;
@@ -156,7 +159,90 @@ header .nav-links li a:hover::before {
 .active::before {
   width: 100% !important;
 }
-
-/* Start Header */
-
 /* End Header */
+
+/* Start Landing */
+.landing {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.landing-container {
+  padding-top: 75px;
+  display: grid;
+  grid-template-columns: auto 30rem;
+  gap: 4rem;
+  align-items: center;
+}
+.landing-container h3 {
+  margin: 1rem 0;
+  color: var(--main-color);
+}
+.landing-container p {
+  margin: 0 0 2rem;
+}
+.right-landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  height: 24rem;
+  width: 24rem;
+  position: relative;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  animation: moving 20s linear infinite;
+}
+@keyframes moving {
+  to {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+.circle a {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  position: absolute;
+  color: var(--main-color);
+  border-radius: 50%;
+  font-size: 22px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  transition: var(--transition);
+}
+.circle a:hover {
+  background-color: var(--main-color);
+  color: var(--color-white);
+}
+.circle a:nth-child(1) {
+  left: calc(50% - 2rem);
+  top: -2rem;
+}
+.circle a:nth-child(2) {
+  top: calc(50% - 2rem);
+  right: -2rem;
+}
+.circle a:nth-child(3) {
+  left: calc(50% - 2rem);
+  bottom: -2rem;
+}
+.circle a:nth-child(4) {
+  top: calc(50% - 2rem);
+  left: -2rem;
+}
+.hero-img {
+  position: absolute;
+  width: 19rem;
+  height: 19rem;
+  padding: 1rem;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+/* End Landing */
