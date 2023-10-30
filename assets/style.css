@@ -170,7 +170,6 @@ header .nav-links li a:hover::before {
   overflow: hidden;
 }
 .landing-container {
-  padding-top: 75px;
   display: grid;
   grid-template-columns: auto 30rem;
   gap: 4rem;
@@ -189,8 +188,8 @@ header .nav-links li a:hover::before {
   justify-content: center;
 }
 .circle {
-  height: 24rem;
-  width: 24rem;
+  height: 28rem;
+  width: 28rem;
   position: relative;
   border: 1px solid var(--main-color);
   border-radius: 50%;
@@ -238,9 +237,9 @@ header .nav-links li a:hover::before {
 }
 .hero-img {
   position: absolute;
-  width: 19rem;
-  height: 19rem;
-  padding: 1rem;
+  width: 22rem;
+  height: 22rem;
+  padding: 2rem;
   overflow: hidden;
   border-radius: 50%;
   background-color: var(--main-color);
@@ -273,3 +272,38 @@ header .nav-links li a:hover::before {
   margin-top: 1rem;
 }
 /* End About */
+
+/* Start Skills */
+#skills {
+  padding-bottom: 0;
+}
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .progress .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .outer-row {
+    height: 0.6rem;
+    background-color: var(--alt-background);
+    margin-bottom: 1rem;
+  }
+  .inner-row {
+    background-color: var(--main-color);
+    width: 90%;
+    height: 100%;
+  }
+  .progress:nth-child(2) .inner-row {
+    width: 80%;
+  }
+  .progress:nth-child(3) .inner-row {
+    width: 80%;
+  }
+  .progress:nth-child(4) .inner-row {
+    width: 70%;
+  }
+/* End Skills */
