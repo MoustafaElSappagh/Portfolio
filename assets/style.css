@@ -246,3 +246,30 @@ header .nav-links li a:hover::before {
   background-color: var(--main-color);
 }
 /* End Landing */
+
+/* Start About */
+.about-container {
+  display: grid;
+  grid-template-columns: 36% auto;
+  gap: 4%;
+  padding: 0 5rem;
+  align-items: center;
+}
+.about-image {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.8rem solid var(--main-color);
+  background-color: var(--main-color);
+  display: flex;
+}
+.about-image img {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+.about-right p {
+  margin: 1rem 0;
+}
+.about-right .btn {
+  margin-top: 1rem;
+}
+/* End About */
